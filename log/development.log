@@ -490,3 +490,553 @@ Processing by MeetingsController#new as HTML
 Completed 200 OK in 89ms (Views: 74.6ms | ActiveRecord: 1.0ms | Allocations: 15804)
 
 
+Started GET "/" for ::1 at 2021-07-21 13:45:37 -0700
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 48.3ms | Allocations: 7541)
+  Rendered pages/home.html.erb within layouts/application (Duration: 54.0ms | Allocations: 8628)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 137.9ms | Allocations: 18085)
+Completed 200 OK in 184ms (Views: 150.0ms | ActiveRecord: 0.0ms | Allocations: 21218)
+
+
+Started GET "/" for ::1 at 2021-07-21 13:51:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 40.1ms | Allocations: 7508)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 7579)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 8779)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `meetings' for #<ActionView::Base:0x007f953babae00>
+Did you mean?  meetings_url):
+    1: <h1>this is home page</h1>
+    2: <div>
+    3: <%= month_calendar event: meetings do |date| %>
+    4:   <%= date %>
+    5: <% end %>
+    6: </div>
+  
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 13:51:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.0ms | Allocations: 5317)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 10806)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms | Allocations: 12125)
+
+
+Started GET "/new" for ::1 at 2021-07-21 13:51:33 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/meetings/new" for ::1 at 2021-07-21 13:51:41 -0700
+Processing by MeetingsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/meetings_controller.rb:15:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 14.3ms | Allocations: 5190)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 10167)
+Completed 200 OK in 47ms (Views: 30.5ms | ActiveRecord: 1.6ms | Allocations: 16214)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 13:51:42 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 8.8ms | Allocations: 4079)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 4190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 8803)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 9207)
+
+
+Started POST "/meetings" for ::1 at 2021-07-21 13:51:50 -0700
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "meeting"=>{"name"=>"test", "start_time(1i)"=>"2021", "start_time(2i)"=>"7", "start_time(3i)"=>"21", "start_time(4i)"=>"19", "start_time(5i)"=>"51", "end_time(1i)"=>"2021", "end_time(2i)"=>"7", "end_time(3i)"=>"21", "end_time(4i)"=>"20", "end_time(5i)"=>"51"}, "commit"=>"Create Meeting"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mMeeting Create (3.0ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test"], ["start_time", "2021-07-21 19:51:00"], ["end_time", "2021-07-21 20:51:00"], ["created_at", "2021-07-21 20:51:50.168763"], ["updated_at", "2021-07-21 20:51:50.168763"]]
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/meetings/1
+Completed 302 Found in 15ms (ActiveRecord: 4.9ms | Allocations: 3018)
+
+
+Started GET "/meetings/1" for ::1 at 2021-07-21 13:51:50 -0700
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:62:in `set_meeting'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/show.html.erb within layouts/application (Duration: 17.7ms | Allocations: 347)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 4907)
+Completed 200 OK in 39ms (Views: 26.0ms | ActiveRecord: 0.2ms | Allocations: 9669)
+
+
+Started GET "/" for ::1 at 2021-07-21 13:51:55 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | Allocations: 4843)
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 9728)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 10110)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:08:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.4ms | Allocations: 5665)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.1ms | Allocations: 6201)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 10981)
+Completed 200 OK in 47ms (Views: 37.8ms | Allocations: 12484)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:08:54 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.3ms | Allocations: 4841)
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.2ms | Allocations: 5108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 9721)
+Completed 200 OK in 17ms (Views: 16.5ms | Allocations: 10112)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:08:55 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.3ms | Allocations: 4834)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.1ms | Allocations: 5101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 9714)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 10105)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:09:29 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 35.4ms | Allocations: 3497)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 3567)
+Completed 500 Internal Server Error in 39ms (Allocations: 4769)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `meetings' for #<ActionView::Base:0x007f9542084f60>
+Did you mean?  @meetings):
+    1: <h1>this is home page</h1>
+    2: <div>
+    3: <%= month_calendar event: meetings do |date| %>
+    4:   <%= date %>
+    5: <% end %>
+    6: </div>
+  
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 14:09:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.5ms | Allocations: 5251)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 10584)
+Completed 200 OK in 30ms (Views: 28.4ms | Allocations: 11809)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:16:53 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.7ms | Allocations: 3491)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3561)
+Completed 500 Internal Server Error in 35ms (Allocations: 4766)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `meetings' for #<ActionView::Base:0x007f953be44698>
+Did you mean?  @meetings):
+    1: <h1>this is home page</h1>
+    2: <div>
+    3: <%= month_calendar events: meetings do |date| %>
+    4:   <%= date %>
+    5: <% end %>
+    6: </div>
+  
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 14:17:10 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/pages/home.html.erb:3
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.3ms | Allocations: 5253)
+  Rendered pages/home.html.erb within layouts/application (Duration: 31.8ms | Allocations: 10157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 14959)
+Completed 200 OK in 57ms (Views: 54.3ms | ActiveRecord: 1.1ms | Allocations: 16184)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:17:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.1ms | Allocations: 4843)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5814)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 10427)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.1ms | Allocations: 10818)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:17:26 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 11.6ms | Allocations: 4492)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 4849)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 9426)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 10492)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:17:28 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 7.4ms | Allocations: 4079)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 4190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 8803)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 9202)
+
+
+Started POST "/meetings" for ::1 at 2021-07-21 14:17:39 -0700
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "meeting"=>{"name"=>"", "start_time(1i)"=>"2021", "start_time(2i)"=>"7", "start_time(3i)"=>"21", "start_time(4i)"=>"15", "start_time(5i)"=>"17", "end_time(1i)"=>"2021", "end_time(2i)"=>"7", "end_time(3i)"=>"21", "end_time(4i)"=>"16", "end_time(5i)"=>"17"}, "commit"=>"Create Meeting"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mMeeting Create (1.7ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["start_time", "2021-07-21 15:17:00"], ["end_time", "2021-07-21 16:17:00"], ["created_at", "2021-07-21 21:17:39.582616"], ["updated_at", "2021-07-21 21:17:39.582616"]]
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/meetings/2
+Completed 302 Found in 18ms (ActiveRecord: 3.9ms | Allocations: 2783)
+
+
+Started GET "/meetings/2" for ::1 at 2021-07-21 14:17:39 -0700
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:62:in `set_meeting'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 336)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 4953)
+Completed 200 OK in 22ms (Views: 16.3ms | ActiveRecord: 0.3ms | Allocations: 6138)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:17:45 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.0ms | Allocations: 4843)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5870)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 10487)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.2ms | Allocations: 10879)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:17:54 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 8.5ms | Allocations: 4082)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 4193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8806)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 9205)
+
+
+Started POST "/meetings" for ::1 at 2021-07-21 14:18:07 -0700
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "meeting"=>{"name"=>"test meeting", "start_time(1i)"=>"2021", "start_time(2i)"=>"7", "start_time(3i)"=>"21", "start_time(4i)"=>"13", "start_time(5i)"=>"17", "end_time(1i)"=>"2021", "end_time(2i)"=>"7", "end_time(3i)"=>"21", "end_time(4i)"=>"14", "end_time(5i)"=>"17"}, "commit"=>"Create Meeting"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mMeeting Create (0.9ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test meeting"], ["start_time", "2021-07-21 13:17:00"], ["end_time", "2021-07-21 14:17:00"], ["created_at", "2021-07-21 21:18:07.327537"], ["updated_at", "2021-07-21 21:18:07.327537"]]
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/meetings/3
+Completed 302 Found in 13ms (ActiveRecord: 3.1ms | Allocations: 2736)
+
+
+Started GET "/meetings/3" for ::1 at 2021-07-21 14:18:07 -0700
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMeeting Load (0.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:62:in `set_meeting'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4753)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5698)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:18:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.6ms | Allocations: 4837)
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.5ms | Allocations: 5902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 10515)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms | Allocations: 10905)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:18:13 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.2ms | Allocations: 4837)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 10515)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.2ms | Allocations: 10905)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:18:16 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.1ms | Allocations: 4836)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.9ms | Allocations: 5900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 10513)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.2ms | Allocations: 10903)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:21:44 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 10.0ms | Allocations: 5253)
+  Rendered pages/home.html.erb within layouts/application (Duration: 13.8ms | Allocations: 6584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 11385)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.2ms | Allocations: 12610)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:21:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.5ms | Allocations: 4843)
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.8ms | Allocations: 5908)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 10522)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.2ms | Allocations: 10914)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:21:47 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.8ms | Allocations: 4836)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.6ms | Allocations: 5900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 10513)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.2ms | Allocations: 10903)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:21:53 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 11.8ms | Allocations: 4441)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 4803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 9417)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 10426)
+
+
+Started POST "/meetings" for ::1 at 2021-07-21 14:22:06 -0700
+Processing by MeetingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "meeting"=>{"name"=>"test new meeting", "start_time(1i)"=>"2021", "start_time(2i)"=>"7", "start_time(3i)"=>"21", "start_time(4i)"=>"21", "start_time(5i)"=>"21", "end_time(1i)"=>"2021", "end_time(2i)"=>"7", "end_time(3i)"=>"21", "end_time(4i)"=>"21", "end_time(5i)"=>"30"}, "commit"=>"Create Meeting"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mMeeting Create (0.5ms)[0m  [1m[32mINSERT INTO "meetings" ("name", "start_time", "end_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test new meeting"], ["start_time", "2021-07-21 21:21:00"], ["end_time", "2021-07-21 21:30:00"], ["created_at", "2021-07-21 21:22:06.181471"], ["updated_at", "2021-07-21 21:22:06.181471"]]
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/meetings_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/meetings/4
+Completed 302 Found in 14ms (ActiveRecord: 3.0ms | Allocations: 2739)
+
+
+Started GET "/meetings/4" for ::1 at 2021-07-21 14:22:06 -0700
+Processing by MeetingsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMeeting Load (0.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/meetings_controller.rb:62:in `set_meeting'
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/show.html.erb within layouts/application
+  Rendered meetings/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 4952)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.4ms | Allocations: 6029)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:22:11 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.6ms | Allocations: 4843)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.0ms | Allocations: 5955)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 10571)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.3ms | Allocations: 10962)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:23:27 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3534)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3604)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4808)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `meetings' for #<ActionView::Base:0x007f953eed2b70>
+Did you mean?  @meetings):
+    1: <%= month_calendar events: meetings do |date, meetings| %>
+    2:   <%= date %>
+    3:   <% meetings.each do |meeting| %>
+    4:     <div>
+  
+app/views/pages/home.html.erb:1
+Started GET "/" for ::1 at 2021-07-21 14:23:41 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:1
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.0ms | Allocations: 5380)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6796)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 11598)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.2ms | Allocations: 12823)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:24:16 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.0ms | Allocations: 5380)
+  Rendered pages/home.html.erb within layouts/application (Duration: 14.0ms | Allocations: 6806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 11607)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms | Allocations: 12826)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:24:46 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.2ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.3ms | Allocations: 5380)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.5ms | Allocations: 6813)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 11614)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.2ms | Allocations: 12833)
+
+
+Started GET "/" for ::1 at 2021-07-21 14:27:51 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.9ms | Allocations: 5380)
+  Rendered pages/home.html.erb within layouts/application (Duration: 24.0ms | Allocations: 6812)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 11649)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.7ms | Allocations: 12868)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:28:14 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 10.6ms | Allocations: 4441)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 4803)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 9418)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 10428)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:28:15 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 8.1ms | Allocations: 4079)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8803)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 9202)
+
+
+Started GET "/meetings/new" for ::1 at 2021-07-21 14:31:01 -0700
+Processing by MeetingsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (Duration: 5.0ms | Allocations: 4480)
+  Rendered meetings/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4836)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 9672)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 10900)
+
+
