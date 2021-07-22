@@ -4053,3 +4053,509 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 54ms (Views: 50.6ms | ActiveRecord: 2.5ms | Allocations: 11402)
 
 
+Started GET "/" for ::1 at 2021-07-21 17:54:09 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (2.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 30.3ms | Allocations: 7234)
+  Rendered pages/home.html.erb within layouts/application (Duration: 61.2ms | Allocations: 13207)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 688.9ms | Allocations: 69047)
+Completed 200 OK in 735ms (Views: 691.1ms | ActiveRecord: 9.2ms | Allocations: 72190)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:55:10 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.5ms | Allocations: 5038)
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 431.6ms | Allocations: 49586)
+Completed 200 OK in 433ms (Views: 431.2ms | ActiveRecord: 1.1ms | Allocations: 49986)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:55:50 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 7.8ms | Allocations: 5032)
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.1ms | Allocations: 6240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 411.9ms | Allocations: 50154)
+Completed 200 OK in 413ms (Views: 411.7ms | ActiveRecord: 1.0ms | Allocations: 50544)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:56:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.0ms | Allocations: 5032)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 404.0ms | Allocations: 49567)
+Completed 200 OK in 405ms (Views: 403.8ms | ActiveRecord: 1.0ms | Allocations: 49957)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:57:42 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.1ms | Allocations: 5457)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.6ms | Allocations: 6991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 12021)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 1.8ms | Allocations: 13247)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:57:44 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.6ms | Allocations: 5038)
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.5ms | Allocations: 6256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 11027)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 1.4ms | Allocations: 11429)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:58:15 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.3ms | Allocations: 5032)
+  Rendered pages/home.html.erb within layouts/application (Duration: 9.5ms | Allocations: 6240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 410.2ms | Allocations: 49736)
+Completed 200 OK in 411ms (Views: 409.7ms | ActiveRecord: 1.0ms | Allocations: 50126)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:58:17 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.4ms | Allocations: 5033)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 11021)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 1.1ms | Allocations: 11420)
+
+
+Started GET "/" for ::1 at 2021-07-21 17:58:31 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.5ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.5ms | Allocations: 5032)
+  Rendered pages/home.html.erb within layouts/application (Duration: 16.7ms | Allocations: 6240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 449.5ms | Allocations: 50178)
+Completed 200 OK in 452ms (Views: 448.9ms | ActiveRecord: 1.5ms | Allocations: 50568)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:02:55 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 12.3ms | Allocations: 5457)
+  Rendered pages/home.html.erb within layouts/application (Duration: 18.0ms | Allocations: 6993)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 12023)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 1.0ms | Allocations: 13248)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:02:57 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.9ms | Allocations: 5038)
+  Rendered pages/home.html.erb within layouts/application (Duration: 11.5ms | Allocations: 6256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 11026)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 1.1ms | Allocations: 11425)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:02:58 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 5.6ms | Allocations: 5032)
+  Rendered pages/home.html.erb within layouts/application (Duration: 12.0ms | Allocations: 6240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 11008)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 1.1ms | Allocations: 11398)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:04:20 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 11.5ms | Allocations: 6104)
+  Rendered pages/home.html.erb within layouts/application (Duration: 17.0ms | Allocations: 7635)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7706)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.9ms | Allocations: 8911)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <div class="simple-calendar">
+    <div class="calendar-heading">
+      <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+      <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+      <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <% date_range.slice(0, 7).each do |day| %>
+            <th><%= t('date.abbr_day_names')[day.wday] %></th>
+          <% end %>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% date_range.each_slice(7) do |week| %>
+          <tr>
+            <% week.each do |day| %>
+              <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+                <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+                  <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+                <% else %>
+                  <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+                <% end %>
+              <% end %>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container">
+2:      <div class="simple-calendar">
+3:        <div class="calendar-heading">
+4:          <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+5:          <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+6:          <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+7:        </div>
+8:    
+9:        <table class="table table-striped">
+10:          <thead>
+11:            <tr>
+12:              <% date_range.slice(0, 7).each do |day| %>
+13:                <th><%= t('date.abbr_day_names')[day.wday] %></th>
+14:              <% end %>
+15:            </tr>
+16:          </thead>
+17:    
+18:          <tbody>
+19:            <% date_range.each_slice(7) do |week| %>
+20:              <tr>
+21:                <% week.each do |day| %>
+22:                  <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+23:                    <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+24:                      <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+25:                    <% else %>
+26:                      <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+27:                    <% end %>
+28:                  <% end %>
+29:                <% end %>
+30:              </tr>
+31:            <% end %>
+32:          </tbody>
+33:        </table>
+34:      </div>
+35:    </div>
+  
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 18:04:33 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.4ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 2.0ms | Allocations: 1562)
+  Rendered pages/home.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3187)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3258)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.4ms | Allocations: 4572)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <div class="simple-calendar">
+    <div class="calendar-heading">
+      <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+      <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+      <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <% date_range.slice(0, 7).each do |day| %>
+            <th><%= t('date.abbr_day_names')[day.wday] %></th>
+          <% end %>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% date_range.each_slice(7) do |week| %>
+          <tr>
+            <% week.each do |day| %>
+              <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+                <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+                  <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+                <% else %>
+                  <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+                <% end %>
+              <% end %>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container">
+2:      <div class="simple-calendar">
+3:        <div class="calendar-heading">
+4:          <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+5:          <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+6:          <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+7:        </div>
+8:    
+9:        <table class="table table-striped">
+10:          <thead>
+11:            <tr>
+12:              <% date_range.slice(0, 7).each do |day| %>
+13:                <th><%= t('date.abbr_day_names')[day.wday] %></th>
+14:              <% end %>
+15:            </tr>
+16:          </thead>
+17:    
+18:          <tbody>
+19:            <% date_range.each_slice(7) do |week| %>
+20:              <tr>
+21:                <% week.each do |day| %>
+22:                  <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+23:                    <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+24:                      <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+25:                    <% else %>
+26:                      <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+27:                    <% end %>
+28:                  <% end %>
+29:                <% end %>
+30:              </tr>
+31:            <% end %>
+32:          </tbody>
+33:        </table>
+34:      </div>
+35:    </div>
+  
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 18:04:36 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 1.2ms | Allocations: 1550)
+  Rendered pages/home.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2831)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms | Allocations: 3202)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="container">
+  <div class="simple-calendar">
+    <div class="calendar-heading">
+      <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+      <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+      <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <% date_range.slice(0, 7).each do |day| %>
+            <th><%= t('date.abbr_day_names')[day.wday] %></th>
+          <% end %>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% date_range.each_slice(7) do |week| %>
+          <tr>
+            <% week.each do |day| %>
+              <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+                <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+                  <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+                <% else %>
+                  <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+                <% end %>
+              <% end %>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+):
+1:    <div class="container">
+2:      <div class="simple-calendar">
+3:        <div class="calendar-heading">
+4:          <%= link_to t('simple_calendar.previous', default: 'Previous'), calendar.url_for_previous_view,class="preNext" %>
+5:          <span class="calendar-title"><%= t('date.month_names')[start_date.month] %> <%= start_date.year %></span>
+6:          <%= link_to t('simple_calendar.next', default: 'Next'), calendar.url_for_next_view , class="preNext"%>
+7:        </div>
+8:    
+9:        <table class="table table-striped">
+10:          <thead>
+11:            <tr>
+12:              <% date_range.slice(0, 7).each do |day| %>
+13:                <th><%= t('date.abbr_day_names')[day.wday] %></th>
+14:              <% end %>
+15:            </tr>
+16:          </thead>
+17:    
+18:          <tbody>
+19:            <% date_range.each_slice(7) do |week| %>
+20:              <tr>
+21:                <% week.each do |day| %>
+22:                  <%= content_tag :td, class: calendar.td_classes_for(day) do %>
+23:                    <% if defined?(Haml) && respond_to?(:block_is_haml?) && block_is_haml?(passed_block) %>
+24:                      <% capture_haml(day, sorted_events.fetch(day, []), &passed_block) %>
+25:                    <% else %>
+26:                      <% passed_block.call day.strftime("%d"), sorted_events.fetch(day, []) %>
+27:                    <% end %>
+28:                  <% end %>
+29:                <% end %>
+30:              </tr>
+31:            <% end %>
+32:          </tbody>
+33:        </table>
+34:      </div>
+35:    </div>
+  
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:4: syntax error, unexpected '='
+app/views/simple_calendar/_month_calendar.html.erb:6: syntax error, unexpected '='
+app/views/pages/home.html.erb:3
+Started GET "/" for ::1 at 2021-07-21 18:05:12 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 6.6ms | Allocations: 5511)
+  Rendered pages/home.html.erb within layouts/application (Duration: 14.7ms | Allocations: 7039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 12199)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 1.6ms | Allocations: 13434)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:07:48 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 9.1ms | Allocations: 5472)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.6ms | Allocations: 7000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.8ms | Allocations: 12030)
+Completed 200 OK in 40ms (Views: 37.3ms | ActiveRecord: 1.0ms | Allocations: 13249)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:09:25 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (1.3ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.3ms | Allocations: 5472)
+  Rendered pages/home.html.erb within layouts/application (Duration: 15.1ms | Allocations: 7000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 12030)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 1.3ms | Allocations: 13249)
+
+
+Started GET "/" for ::1 at 2021-07-21 18:11:20 -0700
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  [1m[36mMeeting Load (0.9ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/pages/home.html.erb:3
+  Rendered simple_calendar/_month_calendar.html.erb (Duration: 8.6ms | Allocations: 5472)
+  Rendered pages/home.html.erb within layouts/application (Duration: 14.6ms | Allocations: 7000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 12030)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.9ms | Allocations: 13249)
+
+
